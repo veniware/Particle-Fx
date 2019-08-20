@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B3B2785-6C6D-4185-A25D-374B93077472}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ParticleFX.My.MyApplication</StartupObject>
+    <RootNamespace>ParticleFX</RootNamespace>
+    <AssemblyName>Particle f%28x%29</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ParticleFX.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8B49975463347DCAB55B3644271DF6391F2D4EF3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Particle f%28x%29_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cmd.vb" />
+    <Compile Include="ctrStringBox.Designer.vb">
+      <DependentUpon>ctrStringBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrStringBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrDynamicButton.Designer.vb">
+      <DependentUpon>ctrDynamicButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrDynamicButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrObjectsList.Designer.vb">
+      <DependentUpon>ctrObjectsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrObjectsList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrValueBox.Designer.vb">
+      <DependentUpon>ctrValueBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrValueBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrWaveform.Designer.vb">
+      <DependentUpon>ctrWaveform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrWaveform.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAeroDialog.Designer.vb">
+      <DependentUpon>frmAeroDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAeroDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIORdb.Designer.vb">
+      <DependentUpon>frmIORdb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIORdb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreview.Designer.vb">
+      <DependentUpon>frmPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRender.Designer.vb">
+      <DependentUpon>frmRender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRendering.Designer.vb">
+      <DependentUpon>frmRendering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRendering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecularHighlights.Designer.vb">
+      <DependentUpon>frmSpecularHighlights.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecularHighlights.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaveformEditor.Designer.vb">
+      <DependentUpon>frmWaveformEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaveformEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaveformsEditor.designer.vb">
+      <DependentUpon>frmWaveformsEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaveformsEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaveformsList.Designer.vb">
+      <DependentUpon>frmWaveformsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaveformsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Engine.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctrStringBox.resx">
+      <DependentUpon>ctrStringBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrDynamicButton.resx">
+      <DependentUpon>ctrDynamicButton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrObjectsList.resx">
+      <DependentUpon>ctrObjectsList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrValueBox.resx">
+      <DependentUpon>ctrValueBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrWaveform.resx">
+      <DependentUpon>ctrWaveform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAeroDialog.resx">
+      <DependentUpon>frmAeroDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIORdb.resx">
+      <DependentUpon>frmIORdb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreview.resx">
+      <DependentUpon>frmPreview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRender.resx">
+      <DependentUpon>frmRender.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRendering.resx">
+      <DependentUpon>frmRendering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpecularHighlights.resx">
+      <DependentUpon>frmSpecularHighlights.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaveformEditor.resx">
+      <DependentUpon>frmWaveformEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaveformsEditor.resx">
+      <DependentUpon>frmWaveformsEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaveformsList.resx">
+      <DependentUpon>frmWaveformsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuhigh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenuLow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScrollBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScrollDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScrollUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SrollButtonBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ParticleFX.ico" />
+    <None Include="Resources\msgWaring.png" />
+    <None Include="Resources\msgError.png" />
+    <None Include="Resources\icoLink.png" />
+    <None Include="Resources\icoDuplicate.png" />
+    <None Include="Resources\icoColor.png" />
+    <None Include="Resources\WaveformBG.png" />
+    <None Include="Resources\icoSelect.png" />
+    <None Include="Resources\icoScale.png" />
+    <None Include="Resources\icoMove.png" />
+    <None Include="Resources\RamBarWhite.png" />
+    <None Include="Resources\RamBarBlue.png" />
+    <None Include="Resources\AboutBox400.png" />
+    <None Include="Resources\GensMenu.png" />
+    <None Include="Resources\ForceMenu.png" />
+    <None Include="Resources\DrawMenu.png" />
+    <None Include="Resources\CamsMenu.png" />
+    <None Include="Resources\FatTab1.png" />
+    <None Include="Resources\FatTab0.png" />
+    <None Include="Resources\ItemBG.png" />
+    <None Include="Resources\TimePoint.png" />
+    <None Include="Resources\PreFrame.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\Pause.png" />
+    <None Include="Resources\NextFrame.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
